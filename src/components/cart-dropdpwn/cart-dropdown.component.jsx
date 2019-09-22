@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CustomButton from '../custom-button/custom-button.component';
-import CartItem from '../cart-items/cart-item.component'
+import CartItem from '../cart-items/cart-item.component';
 import './cart-dropdown.styles.scss';
 
 const CartDropdown = ({ cartItems }) => (

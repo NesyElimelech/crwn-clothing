@@ -8,7 +8,7 @@ class ShopPage extends React.Component {
         super(props);
         this.state = {
             collections: shopData
-        }
+        };
     }
 
     render() {
