@@ -16,6 +16,7 @@
       height: 100%;
     }
   }
+
   .name,
   .quantity,
   .price {
@@ -24,10 +25,12 @@
 
   .quantity {
     display: flex;
-    .arrow{
+
+    .arrow {
       cursor: pointer;
     }
-    .value{
+
+    .value {
       margin: 0 10px;
     }
   }
