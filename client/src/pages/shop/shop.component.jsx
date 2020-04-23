@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
+
 import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
-import CollectionsOverViewContainer from "../../components/collections-overview/collections-overview.container";
+
+import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
 import CollectionPageContainer from "../collection/collection.container";
 
 const ShopPage = ({ fetchCollectionsStart, match }) => {
@@ -15,7 +17,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
       <Route
         exact
         path={`${match.path}`}
-        component={CollectionsOverViewContainer}
+        component={CollectionsOverviewContainer}
       />
       <Route
         path={`${match.path}/:collectionId`}
@@ -25,8 +27,8 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  fetchCollectionsStart: () => dispatch(fetchCollectionsStart())
+const mapDispatchToProps = (dispatch) => ({
+  fetchCollectionsStart: () => dispatch(fetchCollectionsStart()),
 });
 
 export default connect(null, mapDispatchToProps)(ShopPage);
