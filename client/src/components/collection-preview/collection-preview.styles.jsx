@@ -7,6 +7,7 @@ export const CollectionPreviewContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     align-items: center;
+    margin: 15px;
   }
 `;
 
@@ -27,10 +28,6 @@ export const PreviewContainer = styled.div`
   @media screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-  }
-  @media screen and (max-width: 430px) {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
 `;

@@ -22,6 +22,7 @@ export const CollectionItemContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 40vw;
+    margin: 15px;
 
     &:hover {
       .image {
@@ -44,7 +45,7 @@ export const AddButton = styled(CustomButton)`
 
   @media screen and (max-width: 800px) {
     display: block;
-    opacity: 0.9;
+    opacity: 0.65;
     min-width: unset;
     padding: 0 10px;
   }
@@ -75,4 +76,5 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 10%;
   text-align: right;
+  margin-right: 15px;
 `;
