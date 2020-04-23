@@ -25,12 +25,17 @@ const invertedButtonStyles = css`
 `;
 
 const googleSignInStyles = css`
-  background-color: #4285f4;
-  color: white;
+  background-color: #71defc;
+  border: 0.2px solid black;
+
+  @media screen and (max-width: 800px) {
+    margin: 5px 0;
+  }
 
   &:hover {
-    background-color: #357ae8;
+    background-color: #343a40;
     border: none;
+    color: white;
   }
 `;
 
